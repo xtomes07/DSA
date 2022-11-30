@@ -124,5 +124,23 @@ public class BinarniStrom {
 				nejhlubsi(uzel.getPravy(), vyska - 1);	
 			}
 		}
+		
+		//listy
+		public void vypisListyAlt() {
+			vypisListyAlt(koren);
+		}
+		private void vypisListyAlt(Uzel u) {
+			if ( u != null) {
+				if (u.getLevy() == null && u.getPravy() == null) {
+					System.out.println(u.getData());
+				}
+				if (u.getLevy() != null) {
+					vypisListyAlt(u.getLevy());
+				}
+				if (u.getPravy() != null) {
+					vypisListyAlt(u.getPravy());
+				}
+			}
+		}
 
 }

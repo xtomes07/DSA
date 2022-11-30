@@ -25,6 +25,8 @@ public class Spustitelna {
 		
 		mujStrom.vyskaStromu();
 		mujStrom.nejhlubsi();
+		
+		mujStrom.vypisListyAlt();
 
 	}
 }
